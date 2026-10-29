@@ -14,7 +14,7 @@
 ## 👋 About me
 
 - 🥽 **MR × 触覚** で「手に取って感じられる教材」を研究している大学院生です
-- 🧤 HoloLens 2 と触覚グローブ（bHaptics TactGlove）・Joy-Con を組み合わせたシステムを開発中
+- 🧤 HoloLens 2 と触覚デバイスを組み合わせたシステムを開発中
 - 🌱 M5Stack を使った IoT や、スマホで動く WebAR も作っています
 - 💬 Ask me about: **Unity / MRTK, ASP.NET Core, React, M5Stack**
 
@@ -35,13 +35,13 @@ HoloLens 2 で火成岩 6 種の 3D モデルを手に取って観察できる�
 
 ```mermaid
 flowchart LR
-  H["🥽 HoloLens 2<br/>Unity / MRTK2"] -- WebSocket --> S["🖥 ASP.NET Core<br/>SQLite"]
-  S -- SignalR / REST --> W["🌐 Web 管理画面<br/>React"]
-  S -- HID --> J["🎮 Joy-Con"]
-  S -- bHaptics SDK --> G["🧤 TactGlove"]
+  H["🥽 HoloLens 2<br/>Unity / MRTK2"] -- WebSocket ==> S["🖥 ASP.NET Core<br/>SQLite"]
+  S -- SignalR / REST ==> W["🌐 Web 管理画面<br/>React"]
+  S -- HID ==> J["🎮 Joy-Con"]
+  S -- bHaptics SDK ==> G["🧤 TactGlove"]
 ```
 
-===== Research 詳細ここまで ===== -->
+===== Research 詳細ここまで ===== ==>
 
 ## 🛠 Tech Stack
 
@@ -52,10 +52,10 @@ flowchart LR
 
 | 分野 | 使っている技術 | やったこと |
 |---|---|---|
-| 🥽 MR | Unity, MRTK2, C# | HoloLens 2 アプリ開発、指先と 3D モデルの接触判定 |
+| 🥽 MR | Unity, MRTK2, C# | HoloLens 2 アプリ開発、ハンドトラッキングを使ったインタラクション |
 | 🖥 Server | ASP.NET Core 8, EF Core, SQLite | REST API・WebSocket・SignalR でのリアルタイム連携 |
-| 🌐 Web | React, TypeScript, Vite | 教員向け管理画面、ログ分析画面 |
-| 🧤 Haptics | bHaptics SDK, HidSharp | 触覚グローブ・Joy-Con の振動制御 |
+| 🌐 Web | React, TypeScript, Vite | システムの管理用 Web アプリ |
+| 🧤 Haptics | C# (P/Invoke, HID 通信) | 触覚デバイスの振動制御 |
 | 🌱 IoT | M5Stack Core2, C++ (PlatformIO) | 温湿度・気圧センサーの Web モニター |
 | 📱 WebAR | glTF, マーカー型 AR | ブラウザで動く AR コンテンツ |
 
@@ -99,7 +99,7 @@ flowchart LR
   </tr>
 </table>
 
-===== Projects ここまで ===== -->
+ ===== Projects ここまで ===== ==>
 
 ## 📊 GitHub Stats
 
