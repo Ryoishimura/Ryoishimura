@@ -1,6 +1,6 @@
 <!-- Header -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=180&section=header&text=Ryo%20Ishimura&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=XR%20%C3%97%20Haptics%20%C3%97%20IoT&descAlignY=58&descSize=18" alt="header" />
+  <img src="./profile/header.svg" width="100%" alt="header" />
 </p>
 
 <p align="center">
@@ -35,13 +35,15 @@ HoloLens 2 で火成岩 6 種の 3D モデルを手に取って観察できる�
 
 ```mermaid
 flowchart LR
-  H["🥽 HoloLens 2<br/>Unity / MRTK2"] -- WebSocket ==> S["🖥 ASP.NET Core<br/>SQLite"]
-  S -- SignalR / REST ==> W["🌐 Web 管理画面<br/>React"]
-  S -- HID ==> J["🎮 Joy-Con"]
-  S -- bHaptics SDK ==> G["🧤 TactGlove"]
+  H["🥽 HoloLens 2<br/>Unity / MRTK2"] == WebSocket ==> S["🖥 ASP.NET Core<br/>SQLite"]
+  S == SignalR / REST ==> W["🌐 Web 管理画面<br/>React"]
+  S == HID ==> J["🎮 Joy-Con"]
+  S == bHaptics SDK ==> G["🧤 TactGlove"]
 ```
 
-===== Research 詳細ここまで ===== ==>
+===== Research 詳細ここまで ===== -->
+
+<!-- ===== Tech Stack（表示する場合は、この行と下の「Tech Stack ここまで」の行を消す）=====
 
 ## 🛠 Tech Stack
 
@@ -58,6 +60,8 @@ flowchart LR
 | 🧤 Haptics | C# (P/Invoke, HID 通信) | 触覚デバイスの振動制御 |
 | 🌱 IoT | M5Stack Core2, C++ (PlatformIO) | 温湿度・気圧センサーの Web モニター |
 | 📱 WebAR | glTF, マーカー型 AR | ブラウザで動く AR コンテンツ |
+
+===== Tech Stack ここまで ===== -->
 
 <!-- ===== Projects（公開できる状態になったら、この行と下の「Projects ここまで」の行を消すと表示されます）=====
 
@@ -99,7 +103,9 @@ flowchart LR
   </tr>
 </table>
 
- ===== Projects ここまで ===== ==>
+===== Projects ここまで ===== -->
+
+<!-- ===== GitHub Stats（表示する場合は、この行と下の「GitHub Stats ここまで」の行を消す）=====
 
 ## 📊 GitHub Stats
 
@@ -108,12 +114,18 @@ flowchart LR
   <img height="165" src="./profile/top-langs.svg" alt="top langs" />
 </p>
 
+===== GitHub Stats ここまで ===== -->
+
+<!-- ===== Snake（表示する場合は、この行と下の「Snake ここまで」の行を消す）=====
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ryoishimura/Ryoishimura/output/github-snake-dark.svg" />
     <img src="https://raw.githubusercontent.com/Ryoishimura/Ryoishimura/output/github-snake.svg" alt="contribution snake" />
   </picture>
 </p>
+
+===== Snake ここまで ===== -->
 
 <!-- Footer -->
 <p align="center">
