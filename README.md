@@ -18,12 +18,43 @@
 - 🌱 M5Stack を使った IoT や、スマホで動く WebAR も作っています
 - 💬 Ask me about: **Unity / MRTK, ASP.NET Core, React, M5Stack**
 
+## 🔭 Now
+
+- 📝 研究システム「HoloClass」の仕上げと、修士論文の執筆
+- 🧤 触覚グローブで「岩石の違い」が伝わる振動パターンの設計・調整
+- 📊 受講者の観察ログの分析
+
+## 🔬 Research — HoloClass
+
+HoloLens 2 で火成岩 6 種の 3D モデルを手に取って観察できる授業支援システムです。
+指先が岩石に触れると、岩石の組成（珪長質〜苦鉄質）に応じた振動が触覚グローブと Joy-Con に返ってきます。
+教員は Web 管理画面から表示する岩石を割り当て、受講者ごとの操作時間・観察時間を分析できます。
+
+```mermaid
+flowchart LR
+  H["🥽 HoloLens 2<br/>Unity / MRTK2"] -- WebSocket --> S["🖥 ASP.NET Core<br/>SQLite"]
+  S -- SignalR / REST --> W["🌐 Web 管理画面<br/>React"]
+  S -- HID --> J["🎮 Joy-Con"]
+  S -- bHaptics SDK --> G["🧤 TactGlove"]
+```
+
 ## 🛠 Tech Stack
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=unity,cs,dotnet,react,ts,vite,sqlite&theme=dark" alt="main stack" /><br/>
   <img src="https://skillicons.dev/icons?i=cpp,arduino,js,html,css,git,github,vscode&theme=dark" alt="sub stack" />
 </p>
+
+| 分野 | 使っている技術 | やったこと |
+|---|---|---|
+| 🥽 MR | Unity, MRTK2, C# | HoloLens 2 アプリ開発、指先と 3D モデルの接触判定 |
+| 🖥 Server | ASP.NET Core 8, EF Core, SQLite | REST API・WebSocket・SignalR でのリアルタイム連携 |
+| 🌐 Web | React, TypeScript, Vite | 教員向け管理画面、ログ分析画面 |
+| 🧤 Haptics | bHaptics SDK, HidSharp | 触覚グローブ・Joy-Con の振動制御 |
+| 🌱 IoT | M5Stack Core2, C++ (PlatformIO) | 温湿度・気圧センサーの Web モニター |
+| 📱 WebAR | glTF, マーカー型 AR | ブラウザで動く AR コンテンツ |
+
+<!-- ===== Projects（公開できる状態になったら、この行と下の「Projects ここまで」の行を消すと表示されます）=====
 
 ## 🚀 Projects
 
@@ -63,11 +94,13 @@
   </tr>
 </table>
 
+===== Projects ここまで ===== -->
+
 ## 📊 GitHub Stats
 
 <p align="center">
-    <img height="165" src="./profile/stats.svg" alt="stats" />
-    <img height="165" src="./profile/top-langs.svg" alt="top langs" />
+  <img height="165" src="./profile/stats.svg" alt="stats" />
+  <img height="165" src="./profile/top-langs.svg" alt="top langs" />
 </p>
 
 <p align="center">
