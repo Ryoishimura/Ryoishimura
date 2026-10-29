@@ -66,8 +66,8 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Ryoishimura&show_icons=true&count_private=true&theme=tokyonight&hide_border=true" alt="stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ryoishimura&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="top langs" />
+    <img height="165" src="./profile/stats.svg" alt="stats" />
+    <img height="165" src="./profile/top-langs.svg" alt="top langs" />
 </p>
 
 <p align="center">
